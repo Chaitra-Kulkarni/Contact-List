@@ -26,7 +26,8 @@ function App() {
 
   return (
     <div>
-      {contacts.map((contact, index) => {
+      {
+        contacts.map((contact, index) => {
         return (
           <ContactCard key={index}
             name={contact.name}
@@ -35,10 +36,12 @@ function App() {
             age={contact.age}
           />
         )
-      })}
-     
+      })
+      }     
     </div>
+
   );
+
 }
 
 export default App;
